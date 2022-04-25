@@ -7,12 +7,13 @@ body {
   margin: 0;
   color: white;
   font-family: SourceCodePro, monospace;
-  font-size: 2vmin;
+  font-size: clamp(14px, 10vw, 2vmin);
 }
 
 img {
   max-width: 100%;
   height: auto;
+  width: 100%;
 }
 
 h1 {
@@ -31,31 +32,22 @@ a {
 }
 
 a:hover {
-  /* color: #2f4553; */
   color: white;
 }
 
 .container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 100vh;
 }
 
 .col {
-  padding: 20vmin;
-}
-
-.col-first {
-  padding: 20vmin;
-}
-
-.user-background {
-  background-image: url('./../img/picture_2.webp');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 100%;
-  box-shadow: 40px 40px 40px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10vmin;
 }
 
 .description,
@@ -102,6 +94,19 @@ a:hover {
 .socials__item {
   display: inline-flex;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.socials__item svg {
+  width: 2.6vw;
+  height: 2.6vw;
+  min-width: 26px;
+  min-height: 26px;
+}
+
+.user-image {
+  z-index: 1;
+  max-width: 450px;
+  box-shadow: 40px 40px 40px rgba(0, 0, 0, 0.5);
 }
 
 @font-face {
