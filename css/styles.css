@@ -83,8 +83,7 @@ a:hover {
 }
 
 .socials {
-  max-width: 200px;
-  width: 100%;
+  min-width: 28%;
   color: #2f4553;
   display: flex;
   justify-content: space-between;
@@ -96,10 +95,12 @@ a:hover {
 }
 
 .socials__item svg {
-  width: 2.6vw;
-  height: 2.6vw;
+  width: 4vmin;
+  height: 4vmin;
   min-width: 26px;
   min-height: 26px;
+  max-width: 40px;
+  max-height: 40px;
 }
 
 .user-image {
