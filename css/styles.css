@@ -36,7 +36,8 @@ a {
 }
 
 a:hover {
-  color: #2f4553;
+  /* color: #2f4553; */
+  color: white;
 }
 
 .container {
@@ -54,7 +55,7 @@ a:hover {
 }
 
 .user-background {
-  background-image: url('./../img/picture_1.jpg');
+  background-image: url('./../img/picture_2.webp');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -80,15 +81,27 @@ a:hover {
   top: 0;
   height: 100vh;
   overflow: hidden;
+  width: 100%;
 }
 
 .subtitle {
   font-size: 2vmin;
 }
 
+.socials_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20vmin;
+}
+
 .socials {
+  max-width: 200px;
+  width: 100%;
   color: #2f4553;
   display: flex;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
 }
 
 .socials__item {
