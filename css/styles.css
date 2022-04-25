@@ -1,0 +1,97 @@
+@font-face {
+  font-family: SourceCodePro;
+  src: url('./../fonts/SourceCodePro-SemiBold.ttf');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(54, 53, 61);
+  margin: 0;
+  color: white;
+  font-family: SourceCodePro;
+  font-size: 2vmin;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+h1,
+p {
+  text-shadow: 8px 8px 8px black;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  color: #6aa1c1;
+}
+
+a:hover {
+  color: #2f4553;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+}
+
+.col {
+  padding: 20vmin;
+}
+
+.col-first {
+  padding: 20vmin;
+}
+
+.user-background {
+  background-image: url('./../img/picture_1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  box-shadow: 40px 40px 40px rgba(0, 0, 0, 0.5);
+}
+
+.description,
+.user-background {
+  position: relative;
+  z-index: 1;
+}
+
+.app-background {
+  background-image: url('./../img/react-background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.particles {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.subtitle {
+  font-size: 2vmin;
+}
+
+.socials {
+  color: #2f4553;
+  display: flex;
+}
+
+.socials__item {
+  display: inline-flex;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
