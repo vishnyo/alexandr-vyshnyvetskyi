@@ -113,3 +113,9 @@ a:hover {
   font-family: SourceCodePro;
   src: url('./../fonts/SourceCodePro-SemiBold.ttf') format('truetype');
 }
+
+@media screen and (min-width: 768px) {
+  .col {
+    flex: 1;
+  }
+}
