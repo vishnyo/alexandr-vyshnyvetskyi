@@ -1,3 +1,15 @@
+const lazyLoadBG = () => {
+  const bgImage = document.querySelector('.app-background');
+  const image = new Image();
+  image.src = bgImage.getAttribute('img-src');
+  image.onload = () => {
+    bgImage.style.backgroundImage = `url('${image.src}')`;
+    bgImage.style.opacity = 1;
+  };
+};
+
+lazyLoadBG();
+
 particlesJS('particles-js', {
   particles: {
     number: { value: 80, density: { enable: true, value_area: 800 } },
