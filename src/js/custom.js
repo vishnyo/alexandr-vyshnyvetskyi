@@ -1,9 +1,10 @@
 const lazyLoadBG = () => {
   const bgImage = document.querySelector('.app-background');
+  const imageUrl = new URL('./../img/react-background.jpg', import.meta.url);
   const image = new Image();
-  image.src = bgImage.getAttribute('img-src');
+  image.src = imageUrl;
   image.onload = () => {
-    bgImage.style.backgroundImage = `url('${image.src}')`;
+    bgImage.style.backgroundImage = `url('${imageUrl}')`;
     bgImage.style.opacity = 1;
   };
 };
