@@ -116,7 +116,7 @@ a:hover {
 .user-image,
 .app-background {
   opacity: 0;
-  transition: opacity 0.2s;
+  transition: opacity 0.1s;
 }
 
 @font-face {
