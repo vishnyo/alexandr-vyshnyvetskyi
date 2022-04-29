@@ -6,6 +6,7 @@ const lazyLoadBG = () => {
   image.onload = () => {
     bgImage.style.backgroundImage = `url('${imageUrl}')`;
     bgImage.style.opacity = 1;
+    bgImage.style.filter = 'none';
   };
 };
 

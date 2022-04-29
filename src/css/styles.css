@@ -116,7 +116,11 @@ a:hover {
 .user-image,
 .app-background {
   opacity: 0;
-  transition: opacity 0.1s;
+}
+
+.app-background {
+  filter: blur(50px);
+  transition: filter 1s, opacity 1s;
 }
 
 @font-face {
