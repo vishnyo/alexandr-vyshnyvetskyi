@@ -1,6 +1,6 @@
 const lazyLoadBG = () => {
   const bgImage = document.querySelector('.app-background');
-  const imageUrl = new URL('./../img/react-background.jpg', import.meta.url);
+  const imageUrl = new URL('./../img/app-background.jpg', import.meta.url);
   const image = new Image();
   image.src = imageUrl;
   image.onload = () => {
@@ -9,7 +9,16 @@ const lazyLoadBG = () => {
   };
 };
 
+const lazyLoadUserImage = () => {
+  const img = document.querySelector('.user-image');
+
+  img.onload = () => {
+    img.style.opacity = 1;
+  };
+};
+
 lazyLoadBG();
+lazyLoadUserImage();
 
 particlesJS('particles-js', {
   particles: {

@@ -58,8 +58,6 @@ a:hover {
 
 .app-background {
   position: absolute;
-  transition: opacity 0.2s;
-  opacity: 0;
   top: 0;
   left: 0;
   width: 100%;
@@ -113,6 +111,12 @@ a:hover {
   z-index: 1;
   max-width: 550px;
   box-shadow: 40px 40px 40px rgba(0, 0, 0, 0.5);
+}
+
+.user-image,
+.app-background {
+  opacity: 0;
+  transition: opacity 0.2s;
 }
 
 @font-face {
