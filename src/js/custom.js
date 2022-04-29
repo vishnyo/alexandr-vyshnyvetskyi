@@ -9,16 +9,7 @@ const lazyLoadBG = () => {
   };
 };
 
-const lazyLoadUserImage = () => {
-  const img = document.querySelector('.user-image');
-
-  img.onload = () => {
-    img.style.opacity = 1;
-  };
-};
-
 lazyLoadBG();
-lazyLoadUserImage();
 
 particlesJS('particles-js', {
   particles: {
